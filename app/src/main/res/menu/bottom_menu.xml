@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--        TODO: Here you can add/modify/delete buttons-->
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/bottom_Community"
+        android:title="Community"
+        android:icon="@drawable/baseline_travel_explore_24"
+        />
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/bottom_subscriptions"
+        android:title="Compatibility"
+        android:icon="@drawable/white_background" />
+    <item
+        android:id="@+id/bottom_profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_account_circle_24" />
+
+</menu>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="80dp">
+
+    <!-- Profile Picture ImageView -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="95dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/baseline_star_24" />
+
+    <!-- Button for Selecting Profile Picture -->
+
+    <!-- Other UI elements (name, username, bio, follow button, edit button, followers count, RecyclerView) remain unchanged -->
+
+    <!-- Name TextView -->
+
+    <Button
+        android:id="@+id/changeProfileImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_alignStart="@id/profileImage"
+        android:layout_marginStart="184dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="26dp"
+        android:text="Change Picture" />
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/titleUsername"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-120dp"
+        android:text="Name"
+        android:textColor="@color/lavender"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Username TextView -->
+    <TextView
+        android:id="@+id/titleUsername"
+        android:layout_width="160dp"
+        android:layout_height="37dp"
+        android:layout_above="@id/followersCount"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="2dp"
+        android:text="username"
+        android:textColor="@color/lavender"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Bio TextView -->
+
+    <!-- Follow Button -->
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="200dp"
+        android:text="User's bio goes here..."
+        android:textColor="@color/lavender"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/followButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bio"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:text="Follow"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- RecyclerView for Posts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profileRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:layout_below="@+id/followButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-40dp"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="8dp" />
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/followButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-48dp"
+        android:layout_marginEnd="16dp"
+        android:text="Edit Profile"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Followers Count TextView -->
+    <TextView
+        android:id="@+id/followersCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bio"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="18dp"
+        android:layout_toEndOf="@+id/profileImage"
+        android:text="Followers: "
+        android:textColor="@color/lavender"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/img_7"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/img_7"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="286dp"
+                android:layout_height="281dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:text="CelestialConnect connects people around the world, allowing users to share their thoughts, photos, and videos with friends and family. In addition to social features, users can also enjoy daily readings tailored to their zodiac signs and explore their natal charts to gain deeper insights into themselves and their relationships. Join us today and start sharing your moments!"
+                android:textColor="@color/lavender"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/createdBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Created By"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:id="@+id/CREATOR"
+                android:layout_width="88dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="   TEAM 5"
+                android:textColor="@color/lavender"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/DATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APRIL 2024"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:id="@+id/versionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version: 1.0.0"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/lavender"/>
+
+            <TextView
+                android:id="@+id/contactTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us: celestialconnect02@gmail.com"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/lavender"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

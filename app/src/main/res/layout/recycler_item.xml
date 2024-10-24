@@ -1,0 +1,72 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerImage"
+            android:src="@drawable/baseline_add_a_photo_24"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="caption"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/lavender"
+        android:id="@+id/recyclerCaption"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like"
+            android:drawableStart="@drawable/baseline_thumb_up_24"
+            android:padding="8dp"
+            android:drawablePadding="4dp"
+            android:id="@+id/likeButton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:drawableStart="@drawable/baseline_comment_24"
+            android:padding="8dp"
+            android:drawablePadding="4dp"
+            android:id="@+id/commentButton"/>
+
+        <TextView
+            android:id="@+id/postInfo"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Posted by @username • April 20, 2024"
+            android:textColor="@color/lavender"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="community_guidelines" type="id" />
+    <item name="community_agenda" type="id" />
+    <item name="headerTextView" type="id" />
+
+</resources>

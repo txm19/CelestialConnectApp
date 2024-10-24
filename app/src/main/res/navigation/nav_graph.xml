@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+
+
+    <!--   LOGIN-->
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.celestialconnect.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/login_screen" >
+        <action
+            android:id="@+id/action_LoginFragment_to_RegistrationFragment"
+            app:destination="@id/RegistrationFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_AccountActivity"
+            app:destination="@id/accountActivity" />
+    </fragment>
+    <!--   ACCOUNT ACTIVITY -->
+    <activity
+        android:id="@+id/accountActivity"
+        android:name="com.example.celestialconnect.AccountActivity"
+        android:label="AccountActivity"
+        />
+
+    <!--   MENU-->
+<!--    <fragment-->
+<!--        android:id="@+id/MenuFragment"-->
+<!--        android:name="com.example.celestialconnect.MenuFragment"-->
+<!--        android:label="[S2] App Functions"-->
+<!--        tools:layout="@layout/fragment_second" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_MenuFragment_to_UserProfileFragment"-->
+<!--            app:destination="@id/UserProfileFragment"/>-->
+<!--    </fragment>-->
+
+    <!--   REGISTRATION-->
+    <fragment
+        android:id="@+id/RegistrationFragment"
+        android:name="com.example.celestialconnect.RegistrationFragment"
+        android:label="[S3] Registration"
+        tools:layout="@layout/login_registration"/>
+
+    <!--   INCORRECT-->
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.example.celestialconnect.InvalidPasswordFragment"
+        android:label="[S4] Error"
+        tools:layout="@layout/fragment_third" />
+
+
+
+    <!--   USER PROFILE-->
+<!--    <fragment-->
+<!--        android:id="@+id/UserProfileFragment"-->
+<!--        android:name="com.example.celestialconnect.UserProfileFragment"-->
+<!--        android:label="[S5] User Profile"-->
+<!--        tools:layout="@layout/user_profile" >-->
+<!--        <argument-->
+<!--            android:name="username"-->
+<!--            app:argType="string" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_UserProfileFragment_to_MenuFragment"-->
+<!--            app:destination="@id/MenuFragment" />-->
+<!--    </fragment>-->
+
+</navigation>

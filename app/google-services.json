@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "991968748011",
+    "firebase_url": "https://celestialconnect-3c271-default-rtdb.firebaseio.com/",
+    "project_id": "celestialconnect-3c271",
+    "storage_bucket": "celestialconnect-3c271.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991968748011:android:d2a4c175009352187a79ae",
+        "android_client_info": {
+          "package_name": "com.example.celestialconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFJjSnBPb0LnPE_bhgcSHDCc0ELbqUIpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
